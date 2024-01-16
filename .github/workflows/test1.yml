@@ -1,0 +1,9 @@
+name: test-macos-latest-xlarge
+on: [push]
+jobs: 
+  build:
+    runs-on: macos-latest-xlarge
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build
+        run: echo Hello World
